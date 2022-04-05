@@ -11,35 +11,32 @@
     </head>
 
     <body>
-        <nav>
-            <div class="nav-wrapper">
-                <table border="0" class="nav-table">
-                    <tr>
-                        <td width="125px">
-                            <img src="img/miku_logo.png" alt="" width="100px">
-                        </td>
-                        
-                        <td width="220px"></td>
-
-                        <td width="150px">
-                            <a href="#">Home</a>
-                        </td>
-
-                        <td width="150px">
-                            <a href="#section-project">Projects</a>
-                        </td>
-
-                        <td width="150px">
-                            <a href="#section-contact">Contact</a>
-                        </td>
-
-                        <td width="330px"></td>
-                    </tr>
-                </table>
-
-                
+        <div class="navbar">
+            <div class="nav-logo">
+                <img src="img/miku_logo.png" alt="" width="100px">
             </div>
-        </nav>
+            
+            <div class="nav-item">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#section-project">Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="#section-lang">Languages</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-btn">
+                <a href="#section-contact">Contacs</a>
+            </div>
+        </div>
+
 
         <section class="section-landing">
             <div class="container flex-wrap mt-30">
@@ -143,7 +140,7 @@
 
         <img src="img/ellipse_half.png" alt="" class="img-bg-2 mt-50" style="transform: scalex(-1);">
 
-        <section class="section-lang">
+        <section class="section-lang" id="section-lang">
             <div class="container">
                 <div class="text-project">
                     <img src="img/text-lang.png" alt="" width="550px">
@@ -189,7 +186,7 @@
                     <div class="left-content mt-50">
                         <div>
                             <i>“This website is not responsive yet, <br> 
-                                so don't open it on mobile :)”
+                                don't open it on mobile pliss :)”
                             </i>
                         </div>
 
