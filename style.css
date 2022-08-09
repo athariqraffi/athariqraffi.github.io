@@ -79,7 +79,15 @@ body{
     margin-top: 30px;
 }
 
-.text-skill, .btn-contact{
+.text-greeting img{
+    width: 350px;
+}
+
+.text-skill img{
+    width: 500px;
+}
+
+.text-skill{
     margin-top: 10px;
 }
 
@@ -103,8 +111,6 @@ body{
 }
 
 .btn-contact:hover{
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
     animation-name: example;
     animation-duration: 0.25s;
     box-shadow: 0 14px 28px rgba(156, 156, 156, 0.25), 0 10px 10px rgba(104, 104, 104, 0.22);
@@ -119,6 +125,10 @@ body{
     margin-right: 25px;
     font-size: 22pt;
     color: #c2c2c2;
+}
+
+.soc-acc a:last-child{
+    font-size: 24pt;
 }
 
 .text-project{
@@ -185,10 +195,28 @@ body{
     width: 130px;
 }
 
+.img-bs{
+    width: 150px;
+}
+
+.img-figma{
+    width: 105px;
+    height: 180px;
+}
+
+.img-text-lang {
+    margin-top: 160px;
+    text-align: center;
+}
+
+.img-text-lang img{
+    width: 550px;
+}
+
 .section-contact{
     background-color: #00C9C9;
     width: 100%;
-    height: 250px;
+    height: 100%;
     color: white;
     font-weight: 600;
     margin-top: 150px;
@@ -197,6 +225,7 @@ body{
 
 .social-acc{
     color: white;
+    font-weight: lighter;
     text-decoration: none;
 }
 
@@ -209,8 +238,11 @@ body{
 }
 
 .contact-item{
-    margin: 10px;
     margin-bottom: 30px;
+}
+
+.contact-item:last-child{
+    margin-bottom: 0;
 }
 
 .navbar{
@@ -255,4 +287,121 @@ body{
 .nav-btn a:hover{
     background-color: #00C9C9;
     color: white;
+}
+
+.contact-container{
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.left-content-contact{
+    width: 60%;
+}
+
+.right-content-contact{
+    width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .navbar{
+        display: none;
+    }
+
+    .left-content{
+        width: 100%;
+        font-size: 12pt;
+        margin-left: 15px;
+    }
+
+    .text-greeting {
+        margin-top: 10px;
+    }
+
+    .text-greeting img{
+        width: 280px;
+    }
+
+    .text-skill img{
+        width: 350px;
+    }
+    
+    .text-desc{
+        max-width: 90%;
+        text-align: justify;
+        font-size: 10pt;
+    }
+
+    .btn-contact{
+        padding: 15px;
+        font-size: 12pt;
+    }
+
+    .soc-acc{
+        margin-top: 50px;
+    }
+
+    .soc-acc a, .soc-acc a:last-child{
+        margin-right: 10px;
+        font-size: 18pt;
+    }
+
+    .img-bg-2{
+        width: 105px;
+    }
+
+    .right-content{
+        display: none;
+    }
+
+    .project-container{
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .img-text-lang{
+        margin-top: 60px;
+    }
+
+    .img-text-lang img{
+        width: 340px;
+    }
+
+    .img{
+        width: 70px;
+    }
+
+    .img-lang{
+        margin: 10px;
+    }
+
+    .img-bs{
+        width: 80px;
+    }
+
+    .img-figma{
+        width: 60px;
+        height: 100px;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .left-content-contact, .right-content-contact{
+        width: 100%;
+    }
+    
+    .right-content-contact{
+        flex-direction: column;
+        font-size: 10pt;
+        grid-row-gap: 50px;
+        margin-top: 20px;
+    }
 }
